@@ -49,7 +49,7 @@ function Todo({ todo, setTodo, todos }) {
 
   const handleUpdateClick = (id) => {
     const foundTodo = todos.find((todo) => todo._id === id);
-    setTodo(todo);
+    setTodo({ ...foundTodo });
     window.scrollTo({
       top: 0,
       left: 0,
@@ -73,7 +73,7 @@ function Todo({ todo, setTodo, todos }) {
               {todo.name}
             </Typography>
             <Typography variant="body2" className={classes.grayStyle}>
-              Author: me
+              Author: {todo.author}
             </Typography>
             <Typography variant="body2" className={classes.grayStyle}>
               Added: {moment(todo.date).fromNow()}
@@ -88,7 +88,7 @@ function Todo({ todo, setTodo, todos }) {
                 <Button onClick={() => handleCheck(todo._id)}>
                   <CheckCircle color="action" className={classes.isComplete} />
                 </Button>
-                <Button onClick={() => handleUpdateClick()}>
+                <Button onClick={() => handleUpdateClick(todo._id)}>
                   <Create color="primary" />
                 </Button>
                 <Button onClick={() => handleDelete(todo._id)}>
@@ -105,7 +105,7 @@ function Todo({ todo, setTodo, todos }) {
               {todo.name}
             </Typography>
             <Typography variant="body2" className={classes.grayStyle}>
-              Author: me
+              Author: {todo.author}
             </Typography>
             <Typography variant="body2" className={classes.grayStyle}>
               Added: {moment(todo.date).fromNow()}
@@ -120,7 +120,7 @@ function Todo({ todo, setTodo, todos }) {
                 <Button onClick={() => handleCheck(todo._id)}>
                   <CheckCircle color="action" />
                 </Button>
-                <Button onClick={() => handleUpdateClick()}>
+                <Button onClick={() => handleUpdateClick(todo._id)}>
                   <Create color="primary" />
                 </Button>
                 <Button onClick={() => handleDelete(todo._id)}>

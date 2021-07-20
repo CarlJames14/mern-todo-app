@@ -37,7 +37,9 @@ function ListTodo({ setTodo }) {
       </Typography>
       {todos &&
         todos.map((todo) => {
-          return <Todo todo={todo} key={todo._id} setTodo={setTodo} />;
+          return (
+            <Todo todo={todo} key={todo._id} setTodo={setTodo} todos={todos} />
+          );
         })}
     </div>
   );

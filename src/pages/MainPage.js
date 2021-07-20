@@ -20,7 +20,6 @@ function MainPage() {
 
           <div className="wrapper">
             <ListTodo setTodo={setTodo} />
-            {/* todo={todo} */}
           </div>
         </div>
       ) : (
