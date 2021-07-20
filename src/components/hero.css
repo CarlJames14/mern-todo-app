@@ -1,0 +1,50 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero .hero__bg {
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  height: 30rem;
+  width: 35rem;
+  object-fit: contain;
+}
+
+.hero .hero__content {
+  max-width: 38%;
+  margin-left: 10rem;
+}
+
+.hero .hero__content .hero__bannerText {
+  color: #58bd90;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 68px;
+  line-height: 50px;
+  margin-bottom: 3rem;
+}
+
+.hero__link {
+  position: absolute;
+  left: 9.5rem;
+  bottom: 11rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #3f3d56;
+  padding: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.sub__hero {
+  background-color: #fff;
+  width: 100%;
+  z-index: 999;
+}
