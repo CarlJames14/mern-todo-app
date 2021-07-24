@@ -1,6 +1,5 @@
 import React from "react";
 import HeroImg from "../assets/heroImage.svg";
-import SubHero from "../assets/subhero.svg";
 import Bg from "../assets/bgf.png";
 import "./hero.css";
 import { Link } from "react-router-dom";
@@ -19,9 +18,6 @@ function HeroSection() {
           </h1>
         </div>
         <img className="hero__img" src={HeroImg} alt="" />
-      </div>
-      <div className="sub__hero">
-        <img src={SubHero} alt="" />
       </div>
     </>
   );

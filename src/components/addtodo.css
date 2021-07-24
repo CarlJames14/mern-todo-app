@@ -52,3 +52,75 @@
 .group button img {
   margin-left: -30px;
 }
+
+@media only screen and (max-width: 798px) {
+  .group {
+    max-width: 550px;
+  }
+
+  .form-group .add {
+    max-width: 400px;
+    height: 35px;
+  }
+
+  .group button {
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 596px) {
+  .group {
+    max-width: 400px;
+  }
+
+  .form-group .add {
+    max-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .group {
+    max-width: 350px;
+  }
+
+  .form-group .add {
+    max-width: 250px;
+  }
+}
+
+@media only screen and (max-width: 378px) {
+  .group {
+    max-width: 300px;
+  }
+
+  .form-group .add {
+    max-width: 200px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .group {
+    max-width: 250px;
+  }
+
+  .group button {
+    margin-bottom: 10px;
+    margin-top: 0.5rem;
+    height: 35px;
+  }
+
+  .group button img {
+    width: 30px;
+    height: 25px;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+
+  .form-group .add {
+    max-width: 150px;
+    height: 30px;
+  }
+}

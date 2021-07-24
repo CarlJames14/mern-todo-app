@@ -1,7 +1,89 @@
-h3 {
-  color: #fff;
+@media only screen and (max-width: 596px) {
+  .MuiTypography-h4 {
+    font-size: 1.5rem !important;
+  }
+
+  .MuiTypography-h5 {
+    font-size: 1.3rem !important;
+  }
+
+  .MuiTypography-body2 {
+    font-size: 0.6rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .MuiButtonGroup-grouped {
+    min-width: 30px !important;
+  }
+
+  .MuiButton-outlinedSizeSmall {
+    padding: 2px 4px !important;
+  }
 }
 
-h4 {
-  color: #e4e4e4;
+@media only screen and (max-width: 480px) {
+  .MuiTypography-h4 {
+    font-size: 1.3rem !important;
+  }
+
+  .MuiTypography-h5 {
+    font-size: 1.2rem !important;
+  }
+
+  .MuiTypography-body2 {
+    font-size: 0.5rem !important;
+    line-height: 1.1 !important;
+  }
+
+  .MuiButtonGroup-grouped {
+    min-width: 25px !important;
+  }
+}
+
+@media only screen and (max-width: 378px) {
+  .MuiTypography-h4 {
+    font-size: 1.1rem !important;
+  }
+
+  .MuiTypography-h5 {
+    font-size: 1rem !important;
+  }
+
+  .MuiTypography-body2 {
+    font-size: 0.45rem !important;
+  }
+
+  .MuiButtonGroup-grouped {
+    min-width: 15px !important;
+  }
+
+  .MuiButton-outlinedSizeSmall {
+    padding: 1px !important;
+  }
+
+  .MuiSvgIcon-root {
+    font-size: 1.2rem !important;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .MuiTypography-h4 {
+    font-size: 1.1rem !important;
+  }
+
+  .MuiTypography-h5 {
+    font-size: 0.85rem !important;
+  }
+
+  .MuiTypography-body2 {
+    font-size: 0.4rem !important;
+  }
+
+  .MuiButtonGroup-grouped {
+    min-width: 10px !important;
+  }
+
+  .MuiButton-outlinedSizeSmall {
+    padding: 0 !important;
+  }
 }

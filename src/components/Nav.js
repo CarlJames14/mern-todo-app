@@ -34,7 +34,7 @@ function Nav() {
             Log in as {user.name}
           </a>
           <button onClick={() => handleSignOut()} className="nav__linksLB">
-            <Link className="nav__linksL" to="/">
+            <Link className="nav__linksLa" to="/">
               Log out
             </Link>
           </button>

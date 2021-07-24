@@ -4,13 +4,13 @@
   position: relative;
   overflow: hidden;
 }
-
 .signin .signin__bg {
   position: absolute;
   left: -10px;
   bottom: -20px;
   width: 900px;
   height: 400px;
+  z-index: -1;
 }
 
 .signin .signin__auth {
@@ -30,7 +30,23 @@
   justify-content: center;
 }
 
+.signin .signup__form {
+  position: absolute;
+  top: 7rem;
+  right: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .signin .signin__form h1 {
+  color: #50cb93;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.signin .signup__form h1 {
   color: #50cb93;
   font-weight: 700;
   font-size: 2rem;
@@ -42,9 +58,21 @@
   margin-top: 2rem;
 }
 
+.signin .signup__form .form-group1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
 .signin .signin__form .form-group label {
   color: #3f3d56;
   font-size: 0.8rem;
+}
+
+.signin .signup__form .form-group1 label {
+  color: #3f3d56;
+  font-size: 0.8rem;
+  margin-top: 1rem;
 }
 
 .signin .signin__form .form-group input {
@@ -54,6 +82,18 @@
   width: 350px;
   height: 40px;
   margin-top: 0.6rem;
+  border: none;
+  padding-left: 2.5rem;
+  outline: none;
+}
+
+.signin .signup__form .form-group1 input {
+  background: #ffffff;
+  box-shadow: 9px 6px 4px 3px #71efa3;
+  border-radius: 31px;
+  width: 350px;
+  height: 40px;
+  margin-top: 0.5rem;
   border: none;
   padding-left: 2.5rem;
   outline: none;
@@ -72,7 +112,26 @@
   margin-top: 0.5rem;
 }
 
+.signin .signup__form h3 {
+  font-weight: normal;
+  font-size: 0.8rem;
+  color: #3f3d56;
+  margin-top: 2rem;
+}
+.signin .signup__form h4 {
+  font-weight: normal;
+  font-size: 0.8rem;
+  color: #3f3d56;
+  margin-top: 0.5rem;
+}
+
 .signin .signin__form h3 .link {
+  color: #50cb93;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signin .signup__form h3 .link {
   color: #50cb93;
   text-decoration: none;
   font-weight: 500;
@@ -92,7 +151,7 @@
   cursor: pointer;
 }
 
-.signin .signin__form .btn-signup {
+.signin .signup__form .btn-signup {
   margin-top: 1rem;
   background: #71efa3;
   border-radius: 31px;
@@ -104,4 +163,139 @@
   font-weight: 700;
   font-size: 1rem;
   cursor: pointer;
+}
+
+/*responsive*/
+
+@media only screen and (max-width: 968px) {
+  .signin .signin__form {
+    right: 6rem;
+    top: 9rem;
+  }
+
+  .signin .signup__form {
+    top: 7rem;
+    right: 6rem;
+  }
+
+  .signin .signup__form .form-group1 {
+    margin-top: 0.6rem;
+  }
+
+  .signin .signup__form .form-group1 label {
+    margin-top: 0.8rem;
+  }
+
+  .signin .signin__auth {
+    width: 400px;
+    left: 40px;
+  }
+
+  .signin .signin__bg {
+    width: 700px;
+    height: 300px;
+  }
+
+  .signin .signin__form h1 {
+    margin-bottom: 2rem;
+  }
+
+  .signin .signin__form .form-group {
+    margin-top: 0.8rem;
+  }
+
+  .signin .signin__form h3 {
+    margin-top: 1rem;
+  }
+
+  .signin .signin__form .btn {
+    margin-top: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 798px) {
+  .signin .signin__form {
+    right: 4rem;
+  }
+  .signin .signup__form {
+    right: 1rem;
+  }
+  .signin .signin__form h1 {
+    font-size: 1.7rem;
+  }
+  .signin .signup__form h1 {
+    font-size: 1.7rem;
+  }
+  .signin .signin__form .form-group {
+    margin-bottom: 5px;
+  }
+  .signin .signin__form .form-group input {
+    width: 250px;
+  }
+  .signin .signup__form .form-group1 input {
+    width: 250px;
+  }
+  .signin .signin__bg {
+    width: 600px;
+    height: 300px;
+  }
+  .signin .signup__form h4 {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 596px) {
+  .signin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .signin .signin__auth {
+    display: none;
+  }
+  .signin .signin__form {
+    right: 0;
+    top: 0;
+    position: unset;
+  }
+  .signin .signup__form {
+    right: 0;
+    top: 0;
+    position: unset;
+  }
+  .signin .signin__form .btn {
+    background-color: #2bb376;
+  }
+  .signin .signup__form .btn-signup {
+    background-color: #2bb376;
+  }
+
+  .signin .signin__form h3 .link {
+    color: #f3f3f3;
+    font-weight: 700;
+  }
+  .signin .signup__form h3 .link {
+    color: #f3f3f3;
+    font-weight: 700;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .signin .signin__form h1 {
+    font-size: 1.4rem;
+  }
+  .signin .signup__form h1 {
+    font-size: 1.4rem;
+  }
+
+  .signin .signin__form .form-group input {
+    width: 200px;
+  }
+  .signin .signup__form .form-group1 input {
+    width: 200px;
+  }
+
+  .signin .signin__bg {
+    width: 450px;
+  }
 }

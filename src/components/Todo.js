@@ -4,6 +4,7 @@ import { Typography, Button, ButtonGroup } from "@material-ui/core";
 import { Create, Delete, CheckCircle } from "@material-ui/icons";
 import { makeStyles } from "@material-ui/styles";
 import moment from "moment";
+import "./todo.css";
 
 import { deleteTodo, checkTodo } from "../store/actions/todosAction";
 

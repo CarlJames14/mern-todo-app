@@ -8,6 +8,7 @@ import Nav from "./components/Nav";
 import "./app.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { loadUser } from "./store/actions/authActions";
+import Footer from "./components/Footer";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -30,6 +31,7 @@ function App() {
           <Route path="/signup" component={SignUp} />
           <Route path="/todos" component={MainPage} />
         </Switch>
+        <Footer />
       </Router>
     </>
   );

@@ -45,6 +45,12 @@
   margin-left: 2.5rem;
   text-decoration: none;
   cursor: pointer;
+  padding: 0.4rem;
+}
+
+.nav .nav__right .nav__links:hover {
+  border-bottom: 2px solid #50cb93;
+  transition: ease-out 3ms;
 }
 
 .nav .nav__right .nav__linksL {
@@ -53,6 +59,12 @@
   font-weight: normal;
   font-size: 1rem;
   text-decoration: none;
+  padding: 0.4rem;
+}
+
+.nav .nav__right .nav__linksL:hover {
+  border-bottom: 2px solid #50cb93;
+  transition: ease-out 3ms;
 }
 
 .nav .nav__right .nav__linksLB {
@@ -62,4 +74,113 @@
   padding: 0.5rem 1rem;
   border-radius: 20px;
   background-color: transparent;
+}
+
+.nav .nav__right .nav__linksLB:hover {
+  background-color: #50cb93;
+  transition: ease-out 3ms;
+}
+
+.nav .nav__right .nav__linksLa {
+  color: #50cb93;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.4rem;
+}
+
+.nav .nav__right .nav__linksLa:hover {
+  color: #fff;
+}
+
+@media only screen and (max-width: 968px) {
+  .nav .nav__right .nav__links {
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav .nav__left img {
+    height: 2.3rem;
+    width: 2.5rem;
+  }
+  .nav .nav__right {
+    margin-right: 2rem;
+  }
+  .nav .nav__right .nav__links {
+    font-size: 0.8rem;
+  }
+  .nav .nav__left {
+    margin-left: 2rem;
+  }
+  .nav .nav__left .nav__logoText {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 596px) {
+  .nav .nav__right .nav__linksL {
+    font-size: 0.7rem;
+    padding: 0.3rem;
+  }
+
+  .nav .nav__right .nav__linksLa {
+    font-size: 0.7rem;
+  }
+
+  .nav .nav__right .nav__linksLB {
+    margin-left: 0.5rem;
+    padding: 0.3rem 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 468px) {
+  .nav .nav__left img {
+    height: 2rem;
+    width: 2.3rem;
+  }
+  .nav .nav__right {
+    margin-right: 1.5rem;
+  }
+  .nav .nav__right .nav__links {
+    font-size: 0.7rem;
+  }
+  .nav .nav__left {
+    margin-left: 1.5rem;
+  }
+  .nav .nav__left .nav__logoText {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 378px) {
+  .nav .nav__right .nav__linksL {
+    font-size: 0.5rem;
+    padding: 0.3rem;
+  }
+
+  .nav .nav__right .nav__linksLa {
+    font-size: 0.6rem;
+  }
+
+  .nav .nav__right .nav__linksLB {
+    margin-left: 0.5rem;
+    padding: 0.2rem 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .nav .nav__right .nav__linksLa {
+    font-size: 0.5rem;
+  }
+
+  .nav .nav__left .nav__logoText {
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+  }
+
+  .nav .nav__right .nav__linksLB {
+    padding: 0.1rem 0.5rem;
+  }
 }
