@@ -6,11 +6,10 @@ function Footer() {
     <div className="footer">
       <h1>
         {" "}
-        copyright{" "}
-        <a href="https://github.com/CarlJames14" target="_blank">
+        copyright &copy; 2021 | Build and Design by{" "}
+        <a href="https://github.com/CarlJames14" target="_blank" rel="author">
           Carl James Roxas
         </a>
-        2021{" "}
       </h1>
     </div>
   );

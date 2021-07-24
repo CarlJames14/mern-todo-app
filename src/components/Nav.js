@@ -10,7 +10,6 @@ import { signOut } from "../store/actions/authActions";
 function Nav() {
   const history = useHistory();
   const dispatch = useDispatch();
-  const state = useSelector((state) => state);
   const user = useSelector((state) => state.auth);
 
   const handleSignOut = () => {
