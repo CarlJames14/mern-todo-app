@@ -6,3 +6,6 @@ This repository is dedicated only for the frontend or client side of my project.
 
 ### Live Demo here
 https://yourtasklist.netlify.app/
+
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
